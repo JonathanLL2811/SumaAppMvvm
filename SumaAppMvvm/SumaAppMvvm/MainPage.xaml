@@ -1,0 +1,15 @@
+﻿
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SumaAppMvvm.MainPage"
+             Title="SumaAppMvvm">
+
+    <StackLayout Padding="20">
+        <Entry Placeholder="Primer número" Keyboard="Numeric" Text="{Binding Numero1}" />
+        <Entry Placeholder="Segundo número" Keyboard="Numeric" Text="{Binding Numero2}" />
+        <Button Text="Sumar" Command="{Binding SumarCommand}" />
+        <Label Text="{Binding Resultado}" />
+        <Button x:Name="CounterBtn" Text="Limpiar" Clicked="OnCounterClicked" />
+    </StackLayout>
+
+</ContentPage>
